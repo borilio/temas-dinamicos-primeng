@@ -1,3 +1,24 @@
+# Proyecto Base con PrimeNG
+
+En el proyecto ya tienes lo siguiente:
+
+- Proyecto Angular Base, creado con Angular 16.0.4
+- Añadida las dependencias de PrimeNG, 16.0.2.
+- Añadida las dependencias de PrimeFlex, 3.3.1.
+- Añadida las dependencias de PrimeIcons, 6.0.1.
+- Usadas las 3 dependencias anteriores en el `angular.json`.
+- Seleccionado el tema `lara-dark-indigo`. Puedes cambiarlo en el `angular.json`.
+- Creado un módulo llamado `primeng`, listo importarlo en los módulos que crees en tu aplicación.
+- Añadido el componente `RippleModule`, y configurado en el `app.component.ts`.
+- Añadida las animaciones `BrowserAnimationsModule`, para que funcionen los componentes de PrimeNG.
+
+Solo deberás:
+- Añadir los componentes de PrimeNG que quieras usar, al módulo creado llamado `primeng` y ya podrás usarlos.
+- Editar el `angular.json` para seleccionar el tema de Prime.
+- Cambiar el nombre del proyecto del ``package.json`` (ahora usa CrudCentrales).
+- Actualizar las versiones de las dependencias. En ese caso, y si tienes permiso, haz un nuevo commit para mantener este repositorio actualizado 😇.
+
+
 # CrudCentrales
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.4.
