@@ -58,7 +58,7 @@ import {DOCUMENT} from "@angular/common";
 @Injectable({
   providedIn: 'root'
 })
-export class ThemeService {
+export class TemasService {
 
   constructor(@Inject(DOCUMENT) private document: Document) {}
 
@@ -82,11 +82,11 @@ export class ThemeService {
     ```typescript
     export class AppComponent implements OnInit{
     
-        constructor(private temaService: TemasService) {}
+        constructor(private temasService: TemasService) {}
     
         public cambiarTema(tema: string) {
             // Llamamos al método cambiarTema() del servicio
-            this.temaService.cambiarTema(tema);
+            this.temasService.cambiarTema(tema);
         }
     }
     ```
