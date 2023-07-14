@@ -1,1 +1,5 @@
-<p>Aquí empieza la magia</p>
+<div class="flex gap-3">
+  <p-button (click)="cambiarTema(Temas.LARA_LIGHT_TEAL)" label="Modo claro"  icon="pi pi-sun"></p-button>
+  <p-button (click)="cambiarTema(Temas.LARA_DARK_TEAL)" label="Modo oscuro" icon="pi pi-moon"></p-button>
+  <p-dropdown (onChange)="cambiarTema(temaSeleccionado)" [(ngModel)]="temaSeleccionado" [options]="temas"></p-dropdown>
+</div>
