@@ -8,7 +8,7 @@ Partiremos del [repositorio de GitHub](# Repositorio GitHub) para ver todo el to
 
 1. Crearemos una carpeta `themes`, en la ruta `src/themes`. Dentro de ella, crearemos un archivo `css` por cada tema que vayamos a cargar. El nombre del archivo `css` tendrá el mismo nombre que el tema. ([Ver temas disponibles](### CSS y Selección del tema)). En nuestro ejemplo vamos a cambiar entre dos temas, `lara-dark-teal` y `lara-light-teal`, así que creamos dos archivos con esos nombres y extensión `css`, dentro de la carpeta `themes`.
 
-![Carpeta themes y su contenido](img/prime-ng/image-20230714200404102.png)
+![Carpeta themes y su contenido](img/image-20230714200404102.png)
 
 2. El contenido de estos archivos será un `@import` a su correspondiente archivo `css` que estará en la carpeta `node_modules`. En el código de abajo, deberás cambiar `cambia-aquí-ruta-del-tema`, por el nombre del tema que corresponda, tal y como se ve en la captura anterior.
 
@@ -88,6 +88,7 @@ export class ThemeService {
             // Llamamos al método cambiarTema() del servicio
             this.temaService.cambiarTema(tema);
         }
+    }
     ```
 
 12. Para hacer llamadas a ese servicio, usaremos dos botones en el `app.component.html` que enviarán como argumento a la función sendos temas como un string:
@@ -106,7 +107,7 @@ export class ThemeService {
 10. El servicio recibirá como argumento el string `lara-light-teal` o `lara-dark-teal` (o lo que se le envíe), y pondrá ese valor en el `index.html`, aplicando así el tema seleccionado en tiempo de ejecución.
 
 <div style="text-align: center">
-    <img src="img/prime-ng/juan-tamariz-tamariz.gif" alt="Juan Tamariz Tamariz tocando el violín" style="zoom:100%;" />
+    <img src="img/juan-tamariz-tamariz.gif" alt="Juan Tamariz Tamariz tocando el violín" style="zoom:100%;" />
 </div>
 
 
@@ -135,7 +136,7 @@ public temaSeleccionado: string = "";
 
 > 💡Recuerda que para usar el `[(ngModel)]` deberás importar el `FormsModule`.
 
-![image-20230714223237296](img/prime-ng/image-20230714223237296.png)
+![image-20230714223237296](img/image-20230714223237296.png)
 
 Puedes hacerlo con botones, *switches*, *dropdowns*, lo que tu quieras. Solo debes consumir el servicio y listo.
 
@@ -181,7 +182,7 @@ export class TuComponente {
 
 La gran ventaja es que usando la clase, cuando escribamos `Temas.`, el IDE nos ayudará mostrándonos la lista de todas las constantes disponibles.
 
-![image-20230714224937843](img/prime-ng/image-20230714224937843.png)
+![image-20230714224937843](img/image-20230714224937843.png)
 
 ## Repositorio GitHub
 
